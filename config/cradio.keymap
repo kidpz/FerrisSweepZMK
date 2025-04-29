@@ -244,10 +244,10 @@
 
         tri_layer {
             bindings = <
-&trans      &mwh SCROLL_LEFT  &mmv MOVE_UP    &mwh SCROLL_RIGHT  &trans    &trans    &kp LC(LS(TAB))  &kp RC(TAB)    &kp LG(LBKT)    &trans
-&kp TAB     &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &trans    &trans    &kp DOWN         &hm RALT UP    &hm RCTL RIGHT  &kp LG(RBKT)
-&kp LSHIFT  &mkp RCLK         &mwh SCROLL_UP  &mwh SCROLL_DOWN   &to 1     &kp RGUI  &td HOME PG_DN   &td END PG_UP  &trans          &kp RSHIFT
-                                              &to 1              &trans    &trans    &kp RGUI
+&trans      &mwh SCROLL_LEFT  &mmv MOVE_UP    &mwh SCROLL_RIGHT  &trans    &kp K_BACK     &kp LC(LS(TAB))        &kp LC(TAB)    &kp K_FORWARD  &kp BACKSPACE
+&kp TAB     &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &trans    &td HOME LEFT  &hm LEFT_COMMAND DOWN  &hm RALT UP    &td END RIGHT  &kp ENTER
+&kp LSHIFT  &mkp RCLK         &mwh SCROLL_UP  &mwh SCROLL_DOWN   &to 1     &mkp LCLK      &td HOME PG_DN         &td END PG_UP  &trans         &kp RSHIFT
+                                              &to 1              &trans    &kp LEFT_ALT   &to 1
             >;
         };
 
